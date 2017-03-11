@@ -1,0 +1,93 @@
+<html>
+  <body>
+    <head>
+      <title>Forms</title>
+    </head>
+
+    <h1>Forms</h1>
+    <p>Here are all the different forms that can be used:</p>
+
+    <fieldset>
+      <legend>Login</legend>
+      <form action="#">
+        <label for="username">Username:</label>
+          <input type="text" name="username" required="required"/>
+        <label for="password">Password: </label>
+        <input type="password" name="password" required="required"/>
+        <input type="submit" value="submit" />
+    </form>
+    </fieldset>
+
+    <form action="#">
+      <p>What do you think of this website?</p>
+      <textarea name="comments">Enter your comments...</textarea>
+    </form>
+
+    <form action="http://www.example.com/profile.php">
+      <p>Please select your favorite musicservice(s): <br />
+        <input type="checkbox" name="service" value="itunes" checked="checked" />iTunes
+        <input type="checkbox" name="service" value="lastfm" /> Last.form
+        <input type="checkbox" name="service" value="spotify" /> Spotify
+      </p>
+    </form>
+
+      <form action="http://www.example.com/profile.php">
+      <p>What device do you listen music on?</p>
+      <select name="devices">
+        <option value="ipod">iPod</option>
+        <option value="radio">Radio</option>
+        <option value="computer">Computer</option>
+      </select>
+     </form>
+
+     <form action="http://www.example.com/profile.php">
+       <p>Do you play any of the following instruments?
+          (You can select more than one option by holding down
+          control on a PC or command key on a MAC)</p>
+        <select name="instruments" size="3" multiple="multiple">
+          <option value="guitar">Guitar</option>
+          <option value="drums">Drums</option>
+          <option value="keyboard">Keyboard</option>
+          <option value="bass">Bass</option>
+        </select>
+     </form>
+
+     <form action="http://www.example.com/profile.php" method="post">
+       <p>Upload your song in MP3 format:</p>
+       <input type="file" name="user-song"  /> <br />
+       <input type="submit" value="Upload" />
+     </form>
+
+     <form action="http://www.example.com/profile.php">
+       <p>Subscribe to our email list:</p>
+       <input type="text" name="email" />
+       <input type="submit" name="subscribe" value="Subscribe" />
+     </form>
+
+     <form action="http://www.example.com/add.php">
+       <button><img src="images/add.gif" alt="add" />
+         Add</button>
+         <input type="hidden" name="bookmark" value="lyrics" />
+     </form>
+
+     <form action="http://www.example.com/add.php">
+       <label>Age: <input type="text" name="age" /></label>
+       <br />
+       <input id="female" type="radio" name="gender" value="f" />
+       <label for="female">Female</label>
+       <input id="male" type="radio" name="gender" value="m" />
+       <label for="male">Male</label>
+     </form>
+
+     <form action="http://www.example.com/bookings/" method="post">
+       <label for="depart">Departure date:</label>
+       <input type="date" name="depart" />
+       <input type="submit" value="submit" />
+     </form>
+     <form action="http://www.example.com/search.php">
+       <p>Search:</p>
+       <input type="search" name="search" placeholder="Enter Keyword..." />
+       <input type="submit" value="search" />
+     </form>
+  </body>
+</html>
